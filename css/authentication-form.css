@@ -12,7 +12,10 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 30px;
 }
+
 
 h2 {
   text-transform: uppercase;
@@ -22,11 +25,19 @@ p {
   font-weight: bold;
 }
 
+#sign-in {
+  height: max-content;
+}
+
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
   border: 1px solid #a9a9a9;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
 }
 
 .subtext {
@@ -46,12 +57,14 @@ a {
 
 label {
   font-weight: bold;
+  margin-bottom: 6px;
 }
 
 input {
   width: 100%;
   height: 30px;
   padding: 5px;
+  margin-top: 6px;
 }
 
 input[type="checkbox"],
@@ -81,5 +94,27 @@ input[type="submit"]:hover {
 }
 
 .form select {
+  height: 30px;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-group-horizontal-control .form-input-control {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 30px;
+}
+
+#state, #city {
   height: 30px;
 }
